@@ -11,3 +11,7 @@ Pasos para ejecutar:
 
 1. Ejecutar ```npm run build```
 2. Tomar la carpeta ```dist``` y desplegarla 
+
+## Despliegue
+
+[Click aquí](https://sara-acuaviva.github.io/js-vite-blackjack/)

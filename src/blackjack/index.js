@@ -30,14 +30,14 @@ const puntosHTML = document.querySelectorAll('small');
 deck = crearDeck (tipos, especiales );
 
 // Eventos
-btnPedir.addEventListener('click', () => {
+btnPedir.addEventListener('click', async () => {
 
     const carta = pedirCarta(deck);
     
     puntosJugador = puntosJugador + valorCarta( carta );
     puntosHTML[0].innerText = puntosJugador;
     
-    const imgCarta = crearCartaHTML( carta );
+    const imgCarta = await crearCartaHTML( carta );
     divCartasJugador.append( imgCarta );
 
     if ( puntosJugador > 21 ) {
